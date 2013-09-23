@@ -1,0 +1,35 @@
+{
+        "title"    :"Fields of Valor: The Civil War",
+        "category" :"Docudrama",
+        "runTime"  :"4 x 48",
+        "formats"  :["3D"],
+        "homePageThumbNailName":"FieldsofValor.jpg",
+        "detailMarqueeImageName": "FieldsofValor.jpg",
+        "details"  :{
+            "description":"This epic, four-part miniseries offers intimate accounts of the brave men on the front lines as told through paralleling stories from each side of the war, giving audiences a unique insight into the beliefs, struggles and passions of those involved from both the North and South during this epic time in America's history."
+        },
+        "id" : "1",
+        "videoPlaylistID" :  "PLAYOoIMpgNaODJYD68QIorsa_-INJwvtt",
+        "photos"   : [
+            {
+                "name" : "FV_01_1",
+                "caption" : "Ep 1 - Image 1"
+            },
+            {
+                "name" : "FV_01_2",
+                "caption" : "Ep 2 - Image 2"
+            },
+            {
+                "name" : "FV_01_3",
+                "caption" : "Ep 3 - Image 3"
+            },
+            {
+                "name" : "FV_01_4",
+                "caption" : "Ep 4 - Image 4"
+            },
+            {
+                "name" : "FV_01_5",
+                "caption" : "Ep 5 - Image 5"
+            }
+        ]
+    },
