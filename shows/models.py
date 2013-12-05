@@ -20,6 +20,7 @@ class Show(models.Model):
 	detailMarqueeImage = models.ImageField(upload_to='images/DetailMarquee/')
 	details = models.TextField()
 	videoPlaylistID = models.CharField(max_length=200)
+	sortOrder = models.IntegerField()
 	def __unicode__(self):
 		return self.title
 

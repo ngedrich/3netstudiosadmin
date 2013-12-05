@@ -1,0 +1,32 @@
+[
+{% if show_list %}
+	{% for show in show_list %}
+	{
+        "title"    :"{{ show.title }}",
+        "category" :"{{ show.category.name }}",
+        "runTime"  :"{{ show.runtime }}",
+        "formats"  :{% for format in show.formats.all %}["{{ format.name }}"]{% endfor %},
+        "homePageThumbNailName":"{{ show.homePageThumbNail }}",
+        "detailMarqueeImageName": "{{ show.detailMarqueeImage }}",
+        "details"  :{
+            "description":"{{ show.details }}"
+        },
+        "id" : "{{show.id}}",
+        "videoPlaylistID" : "{{ show.videoPlaylistID }}",
+        "photos"   : [
+    	{% for photo in show.photo_set.all %}
+			{
+                "name" : "{{ photo.image }}",
+                "caption" : "{{ photo.caption }}"
+            }{% if not forloop.last %},{% endif %}
+
+		{% endfor %}
+            
+        ]
+    }{% if not forloop.last %},{% endif %}
+		
+		
+	{% endfor %}
+{% endif %}
+
+]
